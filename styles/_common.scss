@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+ }
+
+html {
+    font-family: $font-three, 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    font-size: 15px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+h1, h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-container {
+    min-height: 50vh;
+}
+
+.half-width-container {
+    width: 50%;
+    margin: auto;
+}
+
+.full-width-container {
+    min-height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // visibility: hidden;
+}
+
+.section-title {
+    width: 100%;
+    padding: 30px;
+    font-family: $font-one, 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.section-subtitle {
+    width: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: auto auto 30px auto;
+    padding: 15px;
+    background-color: $color-two;
+    color: $color-one;
+    border-radius: 10px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.p1 {
+    font-size: 1.5em;
+}
+
+.resp-img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.material-icons.md-32 {
+    display: inline-flex;
+    vertical-align: middle;
+    transition: all .2s;
+    font-size: 32px;
+    margin: 0 10px 5px 0;
+}
+
+.material-icons.md-24 {
+    display: inline-flex;
+    vertical-align: middle;
+    transition: all .2s;
+    font-size: 24px;
+    margin: 0 10px 0 0;
+}

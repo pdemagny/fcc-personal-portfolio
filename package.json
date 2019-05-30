@@ -1,0 +1,19 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Pierre DEMAGNY's Personal Portfolio for FreeCodeCamp.",
+  "main": "index.js",
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "sass": "^1.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --no-source-map -s compressed styles/styles.scss:styles.css",
+    "sass-watch": "sass --watch --no-source-map -s compressed styles/styles.scss:styles.css"
+  },
+  "keywords": [],
+  "author": "Pierre DEMAGNY",
+  "license": "WTFPL"
+}

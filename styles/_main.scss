@@ -1,0 +1,335 @@
+#welcome-section {
+    top: 0;
+    min-height: 100vh;
+    padding-top: 45vh;
+    width: 100vw;
+    background-image: url("https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/helping_hand.png");
+}
+
+#welcome-container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-greetings {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#welcome-hi {
+    color: $color-four;
+}
+
+#welcome-devops {
+    color: $color-four;
+}
+
+#welcome-role {
+    font-size: 1.5em;
+    color: $color-three;
+}
+
+#pres {
+    display: flex;
+    flex-direction: column;
+    color: $color-one;
+}
+
+#pres-container {
+    width: 50%;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#pres-title {
+    color: $color-three;
+    background-color: $color-one;
+}
+
+.pres-img {
+    margin: 10px;
+}
+
+.pres-content {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+#projects {
+    background-image: url("https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/projects.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-container {
+    width: 75%;
+    margin: 50px auto 50px auto;
+}
+
+#projects-title {
+    color: $color-four;
+    background-color: $color-three;
+}
+
+.project-tile {
+    position: relative;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 1.8em;
+    background-color: $color-two;
+    color: $color-one;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: background-color .2s, color .2s, border-radius .2s;
+}
+
+.project-tile:hover {
+    background-color: $color-one;
+    color: $color-three;
+    border-radius: 4px;
+}
+
+.project-tile input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.project-tile label {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.project-tile input:checked ~ label {
+    color: $color-four;
+    background-color: $color-one;
+}
+
+.iframe-container {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+
+.fcc-iframes {
+    min-height: 50vh;
+    width: 100%;
+}
+
+.project-tile input:checked ~ .iframe-container {
+    min-height: 50vh;
+    max-height: 50vh;
+}
+
+.project-tile label::after {
+    content: "+";
+    font-weight: bold;
+    float: right;
+    transition: all .5s;
+}
+
+.project-tile input:checked + label::after {
+    transform: rotate(315deg);
+}
+
+#academics-title {
+    color: $color-three;
+    background-color: $color-four;
+}
+
+.timeline {
+    padding: 20px;
+    position: relative;
+    background-color: $color-two;
+    z-index: 0;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    background: linear-gradient(0deg, $color-two, $color-four);
+    z-index: 0;
+}
+
+.timeline-date {
+    position: relative;
+    margin: auto;
+    width: 100px;
+    padding: 10px 5px;
+    border: 1px outset $color-four;
+    border-radius: 5px;
+    background-color: white;
+    color: $color-one;
+    text-align: center;
+    font-family: $font-two, 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.timeline-container {
+    padding: 40px;
+    position: relative;
+    width: 50%;
+    z-index: 1;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px double $color-four;
+    top: 75px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.timeline-container:hover::after {
+    border: 4px solid $color-one;
+}
+
+.timeline-left {
+    left: 0%;
+    z-index: 1;
+}
+
+.timeline-left::before {
+    transform: rotate(225deg);
+    background: white;
+    border-left: 1px solid $color-four;
+    border-bottom: 1px solid $color-four;
+    content: "";
+    display: block;
+    height: 14px;
+    position: absolute;
+    right: 33px;
+    top: 85px;
+    width: 14px;
+    z-index: 3;
+    transition: all .2s;
+}
+
+.timeline-right {
+    left: 50%;
+    z-index: 1;
+}
+
+.timeline-right::before {
+    transform: rotate(45deg);
+    background: white;
+    border-left: 1px solid $color-four;
+    border-bottom: 1px solid $color-four;
+    content: "";
+    display: block;
+    height: 14px;
+    position: absolute;
+    left: 33px;
+    top: 85px;
+    width: 14px;
+    z-index: 3;
+    transition: all .2s;
+}
+
+.timeline-right::after {
+    left: -16px;
+    z-index: 1;
+}
+
+.timeline-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    position: relative;
+    border: solid 1px $color-four;
+    background-color: white;
+    transition: all .2s;
+    z-index: 2;
+}
+
+.timeline-container:hover  .timeline-content {
+    border: solid 1px $color-one;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    cursor: zoom-in;
+}
+
+.timeline-container:hover .timeline-content-hidden {
+    display: block;
+}
+
+.timeline-right:hover::before, .timeline-left:hover::before {
+    border-left: 1px solid $color-one;
+    border-bottom: 1px solid $color-one;
+}
+
+.timeline-content-header h4 {
+    text-align: center;
+    font-family: $font-two, 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    font-size: 1.5em;
+    color: $color-one;
+}
+
+.timeline-content-header h5 {
+    text-align: center;
+    font-size: 1.3em;
+    color: $color-four;
+}
+
+.timeline-content-images {
+    max-width: 256px;
+    min-width: 128px;
+    margin: 10px;
+}
+
+#socials {
+    background-image: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2149&q=80");
+    min-height: 50vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+#socials-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+}
+
+#socials-title {
+    color: $color-one;
+    background-color: $color-four;
+}
+
+.socials-tile {
+    justify-self: center;
+    align-self: center;
+}
+
+.socials-links {
+    text-decoration: none;
+}
+
+.socials-img {
+    max-width: 128px;
+    max-height: 128px;
+}

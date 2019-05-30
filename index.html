@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="body-container">
+        <header id="header" data-aos="fade-down-left">
+            <div id="navbar-container">
+                <button id="navbar-drop-btn"><i class="material-icons md-32">menu</i> menu</button>
+                <div id="navbar">
+                    <a class="nav-link" href="#welcome-section">welcome</a>
+                    <a class="nav-link" href="#pres">presentation</a>
+                    <a class="nav-link" href="#projects">projects</a>
+                    <a class="nav-link" href="#academics">academics</a>
+                    <a class="nav-link" href="#socials">socials</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <section id="welcome-section" class="section-container parallax" data-aos="fade-in">
+                <div id="welcome-container">
+                    <div id="welcome-greetings">
+                        <h1 id="welcome-hi" class="section-title" data-aos="slide-right">Hi.</h1>
+                        <h1 id="welcome-devops" class="section-title" data-aos="slide-down">I'm Pierre.</h1>
+                    </div>
+                    <h3 id="welcome-role" data-aos="slide-left">A DevOps & Cloud Architect.</h3>
+                </div>
+            </section>
+            <section id="pres" class="section-container">
+                <h1 id="pres-title" class="section-title" data-aos="zoom-in">Presentation</h1>
+                <div id="pres-container" data-aos="slide-right">
+                    <div class="pres-img" style="grid-area: 1/1/2/2;"><img class="resp-img" src="https://mon-beau-bateau.com/https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/p/9/4/1/941-large_default.jpg" alt="Cloud Question Mark"></div>
+                    <div class="pres-content" style="grid-area: 1/2/2/5;">
+                        <p class="p1">Living in Toulouse, France.</p>
+                        <p class="p1">I'm 37 and a father of two.</p>
+                    </div>
+                    <div class="pres-content" style="grid-area: 2/1/2/4;">
+                        <p class="p1">Passionate, Curious & Hard-working.</p>
+                        <p class="p1">I'm Focused on getting things done.</p>
+                    </div>
+                    <div class="pres-img" style="grid-area: 2/4/3/5;"><img class="resp-img" src="https://ui-ex.com/images/mario-vector-question-mark-3.png" alt="Cloud Question Mark"></div>
+                    <div class="pres-img"><img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/devops.svg" alt="Cloud Question Mark"></div>
+                    <div class="pres-content" style="grid-area: 3/2/5/5;">
+                        <p class="p1">Automation Addict.</p>
+                        <p class="p1">Cloud, DevOps & Linux Specialist.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="section-container parallax" data-aos="fade-in">
+                <h1 id="projects-title" class="section-title" data-aos="zoom-in">Projects</h1>
+                <div id="projects-container" data-aos="slide-left">
+                    <p class="section-subtitle">My FCC Responsive Web Design Projects !</p>
+                    <div class="project-tile">
+                        <input id="tab-one" type="checkbox" name="tabs">
+                        <label for="tab-one">JS documentation</label>
+                        <div class="iframe-container">
+                            <iframe id="fcc-js-documentation" class="fcc-iframes" src="https://codepen.io/pdemagny/embed/bZKVPr" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <input id="tab-two" type="checkbox" name="tabs">
+                        <label for="tab-two">Tribute Page</label>
+                        <div class="iframe-container">
+                            <iframe id="fcc-tribute-page" class="fcc-iframes" src="https://codepen.io/pdemagny/embed/NJEOGp" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <input id="tab-three" type="checkbox" name="tabs">
+                        <label for="tab-three">Survey Form</label>
+                        <div class="iframe-container">
+                            <iframe id="fcc-survey-form" class="fcc-iframes" src="https://codepen.io/pdemagny/embed/drQgGx" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <input id="tab-four" type="checkbox" name="tabs">
+                        <label for="tab-four">Product Landing Page</label>
+                        <div class="iframe-container">
+                            <iframe id="fcc-product-landing-page" class="fcc-iframes" src="https://codepen.io/pdemagny/embed/aMXrxP" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <input id="tab-five" type="checkbox" name="tabs">
+                        <label for="tab-five">Personal Portfolio<a href="https://codepen.io/pdemagny/pen/MRexdO" target="_blank" title="Portfolio"></a></label>
+                        <div class="iframe-container">
+                            <iframe id="fcc-personal-portfolio" class="fcc-iframes" src="https://codepen.io/pdemagny/embed/MRexdO" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="academics" class="section-container">
+                <h1 id="academics-title" class="section-title" data-aos="zoom-in">Academics</h1>
+                <div class="timeline">
+                    <p class="timeline-date" data-aos="flip-down">2006</p>
+                    <div class="timeline-container timeline-left" data-aos="flip-left">
+                        <div class="timeline-content">
+                            <div class="timeline-content-images">
+                                <img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/greta_rouen.png" alt="greta_rouen" title="Greta Rouen Tertiaire">
+                            </div>
+                            <div class="timeline-content-header">
+                                <h4>Greta Rouen Tertiaire</h4>
+                                <h5>Associate’s Degree</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="timeline-date" data-aos="flip-down">2009</p>
+                    <div class="timeline-container timeline-right" data-aos="flip-right">
+                        <div class="timeline-content">
+                            <div class="timeline-content-header">
+                                <h4>University Institute Of Technology - Rouen University</h4>
+                                <h5>Bachelor Of Science</h5>
+                            </div>
+                            <div class="timeline-content-images">
+                                <img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/univ_rouen.png" alt="univ_rouen" title="Université de Rouen">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="timeline-date" data-aos="flip-down">2010</p>
+                    <div class="timeline-container timeline-left" data-aos="flip-left">
+                        <div class="timeline-content">
+                            <div class="timeline-content-images">
+                                <img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/mixerfactory.png" alt="mixerfactory" title="MixerFactory">
+                            </div>
+                            <div class="timeline-content-header">
+                                <h4>MixerFactory</h4>
+                                <h5>Cloud Architect & Systems Administrator</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="timeline-date" data-aos="flip-down">2016</p>
+                    <div class="timeline-container timeline-right" data-aos="flip-right">
+                        <div class="timeline-content">
+                            <div class="timeline-content-header">
+                                <h4>PrintOclock</h4>
+                                <h5>Systems & Network Administrator</h5>
+                            </div>
+                            <div class="timeline-content-images">
+                                <img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/printoclock-logo.png" alt="printoclock" title="PrintOclock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-container timeline-left" data-aos="flip-left">
+                        <div class="timeline-content">
+                            <div class="timeline-content-images">
+                                <img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/clicher.svg" alt="clicher" title="Clicher">
+                            </div>
+                            <div class="timeline-content-header">
+                                <h4>Clicher</h4>
+                                <h5>DevOps & Cloud Architect</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="timeline-date" data-aos="flip-down">2018</p>
+                    <div class="timeline-container timeline-right" data-aos="flip-right">
+                        <div class="timeline-content">
+                            <div class="timeline-content-header">
+                                <h4>SoloLearn</h4>
+                                <h5>Python 3 Tutorial</h5>
+                            </div>
+                            <div class="timeline-content-images">
+                                <a href="https://www.sololearn.com/Certificate/1073-3377129/pdf/" target="_blank" title="SoloLearn"><img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/cert-1073-3377129.jpg" alt="sololearn" title="SoloLearn Python3 Tutorial"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-container timeline-left" data-aos="flip-left">
+                        <div class="timeline-content">
+                            <div class="timeline-content-header">
+                                <h4>Cenareo</h4>
+                                <h5>DevOps & Cloud Architect</h5>
+                            </div>
+                            <div class="timeline-content-images">
+                                <img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/cenareo.png" alt="cenareo" title="Cenareo">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="timeline-date" data-aos="flip-down">2019</p>
+                    <div class="timeline-container timeline-right" data-aos="flip-right">
+                        <div class="timeline-content">
+                            <div class="timeline-content-header">
+                                <h4>FreeCodeCamp</h4>
+                                <h5>Responsive Web Design Certification</h5>
+                            </div>
+                            <div class="timeline-content-images">
+                                <a href="https://www.freecodecamp.org/pdemagny" target="_blank" title="FreeCodeCamp"><img class="resp-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/FreeCodeCamp_logo.png" alt="freecodecamp" title="FreeCodeCamp"></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="socials" class="section-container parallax" data-aos="fade-in">
+                <h1 id="socials-title" class="section-title" data-aos="zoom-in">Socials</h1>
+                <div class="half-width-container" data-aos="slide-left">
+                    <h3 class="section-subtitle">Here's a few ways to reach out to me ...</h3>
+                    <div id="socials-container">
+                        <div class="socials-tile">
+                            <a class="socials-link" href="https://twitter.com/PierreDemagny" target="_blank" title="Twitter"><img class="socials-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter"></a>
+                        </div>
+                        <div class="socials-tile">
+                            <a id="profile-link" class="socials-link" href="https://github.com/pdemagny" target="_blank" title="GitHub"><img class="socials-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/octocat.png" alt="GitHub"></a>
+                        </div>
+                        <div class="socials-tile">
+                            <a class="socials-link" href="https://www.linkedin.com/in/pdemagny/" target="_blank" title="LinkedIn"><img class="socials-img" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/In-2C-115px-TM.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer"">
+            <div id="footer-container">
+                <div class="footer-tile" data-aos="flip-left">
+                    <h3>Resources:</h3>
+                    <ul id="resources-links">
+                        <li><a class="footer-link" href="https://www.w3schools.com/" target="_blank" title="w3schools">w3schools</a></li>
+                        <li><a class="footer-link" href="https://developer.mozilla.org/fr/" target="_blank" title="MDN">MDN</a></li>
+                        <li><a class="footer-link" href="https://www.freecodecamp.org/" target="_blank" title="FreeCodeCamp">FreeCodeCamp</a></li>
+                        <li><a class="footer-link" href="https://www.frontendmasters.com/" target="_blank" title="Frontend Masters">Frontend Masters</a></li>
+                    </ul>
+                    <div class="footer-delimiter"></div>
+                </div>
+                <div class="footer-tile" data-aos="flip-left">
+                    <h3>Made with:</h3>
+                    <ul id="made-with-links">
+                        <li><a class="footer-link" href="https://www.w3.org/standards/webdesign/htmlcss" target="_blank" title="HTML5"><img class="footer-logo" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/HTML5_Logo_256.png" alt="html5-logo"></a></li>
+                        <li><a class="footer-link" href="https://www.w3.org/standards/webdesign/htmlcss" target="_blank" title="CSS3"><img class="footer-logo" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/CSS3_Logo_256.png" alt="css3-logo"></a></li>
+                        <li><a class="footer-link" href="https://sass-lang.com/" target="_blank" title="Sass"><img class="footer-logo" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/sass-226054.png" alt="sass-logo"></a></li>
+                        <li><a class="footer-link" href="https://code.visualstudio.com/" target="_blank" title="VSCode"><img class="footer-logo" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/vscode_logo.png" alt="vscode-logo"></a></li>
+                        <li><a class="footer-link" href="https://github.com/" target="_blank" title="GitHub"><img class="footer-logo" src="https://s3.eu-west-3.amazonaws.com/fcc-personal-portfolio/img/GitHub-Mark-Light-120px-plus.png" alt="github-logo"></a></li>
+                        <li><a class="footer-link" href="http://www.wtfpl.net/" target="_blank"><img class="footer-logo" src="http://www.wtfpl.net/wp-content/uploads/2012/12/logo-220x1601.png" alt="WTFPL" title="WTFPL"></a></li>
+                    </ul>
+                    <div class="footer-delimiter"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: 'animated',
+        duration: 800,
+        once: true
+    });</script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>

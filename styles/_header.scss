@@ -1,0 +1,74 @@
+#header {
+    float: right;
+    position: sticky;
+    top: 25px;
+    right: 25px;
+    width: auto;
+    z-index: 1;
+}
+
+#navbar-container {
+    position: relative;
+    display: inline-block;
+}
+
+#navbar-drop-btn {
+    width: 100%;
+    min-width: 150px;
+    border: none;
+    background-color: $color-two;
+    color: $color-one;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 24px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#navbar {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: $color-one;
+    color: $color-three;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.nav-link {
+    min-width: 150px;
+    color: $color-three;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    display: block;
+    transform: scale(1);
+    border-radius: 0px;
+    // border-bottom: solid $color-three 1px;
+    transition: color .2s, background-color .2s, transform .2s;
+}
+
+.nav-link:hover {
+    background-color: $color-four;
+    color: $color-three;
+    border-radius: 3px;
+    // border-bottom: solid $color-four 1px;
+    transform: scale(1.1);
+}
+
+#navbar-container:hover #navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar-container:hover .material-icons.md-32 {
+    transform: rotate(90deg);
+}
+
+#navbar-container:hover #navbar-drop-btn {
+    background-color: $color-three;;
+    color: $color-one;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: color .2s, background-color .2s;
+}
